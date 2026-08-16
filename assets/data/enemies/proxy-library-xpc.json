@@ -166,6 +166,168 @@
       },
       "timeBoni": null,
       "behaviors": []
+    },
+    "timescaleProxy": {
+      "copyOwnerAnims": false,
+      "breakType": "NEVER",
+      "action": [
+        {
+          "type": "CONNECT_PROXY_TO_TARGET"
+        },
+        {
+          "type": "DETACH_TIME_PARENT"
+        },
+        {
+          "condition": "!entity.ownerAttrib.removeTimescale",
+          "type": "IF",
+          "withElse": false,
+          "thenStep": [
+            {
+              "duration": 0,
+              "target": "TARGET",
+              "align": "CENTER",
+              "rotateFace": 0,
+              "flipLeftFace": false,
+              "wait": false,
+              "waitSkip": 0,
+              "actionDetached": false,
+              "fixPos": false,
+              "type": "SHOW_EFFECT",
+              "effect": {
+                "sheet": "scene.hacking",
+                "name": "evoHackActivate"
+              },
+              "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              }
+            }
+          ]
+        },
+        {
+          "0": [
+            {
+              "target": "TARGET",
+              "timeScale": 3.0,
+              "logicTimeScale": 1,
+              "moveXYScale": 1,
+              "type": "ADD_TEMP_INFLUENCE"
+            }
+          ],
+          "1": [
+            {
+              "target": "TARGET",
+              "timeScale": 2.0,
+              "logicTimeScale": 1,
+              "moveXYScale": 1,
+              "type": "ADD_TEMP_INFLUENCE"
+            }
+          ],
+          "2": [
+            {
+              "target": "TARGET",
+              "timeScale": 1.5,
+              "logicTimeScale": 1,
+              "moveXYScale": 1,
+              "type": "ADD_TEMP_INFLUENCE"
+            }
+          ],
+          "3": [
+            {
+              "target": "TARGET",
+              "timeScale": 1.25,
+              "logicTimeScale": 1,
+              "moveXYScale": 1,
+              "type": "ADD_TEMP_INFLUENCE"
+            }
+          ],
+          "4": [
+            {
+              "target": "TARGET",
+              "timeScale": 1.0,
+              "logicTimeScale": 1,
+              "moveXYScale": 1,
+              "type": "ADD_TEMP_INFLUENCE"
+            }
+          ],
+          "5": [
+            {
+              "target": "TARGET",
+              "timeScale": 0.75,
+              "logicTimeScale": 1,
+              "moveXYScale": 1,
+              "type": "ADD_TEMP_INFLUENCE"
+            }
+          ],
+          "6": [
+            {
+              "target": "TARGET",
+              "timeScale": 0.5,
+              "logicTimeScale": 1,
+              "moveXYScale": 1,
+              "type": "ADD_TEMP_INFLUENCE"
+            }
+          ],
+          "7": [
+            {
+              "target": "TARGET",
+              "timeScale": 0.25,
+              "logicTimeScale": 1,
+              "moveXYScale": 1,
+              "type": "ADD_TEMP_INFLUENCE"
+            }
+          ],
+          "8": [
+            {
+              "target": "TARGET",
+              "timeScale": 0.15,
+              "logicTimeScale": 1,
+              "moveXYScale": 1,
+              "type": "ADD_TEMP_INFLUENCE"
+            }
+          ],
+          "type": "SELECT_FIRST",
+          "options": [
+            "entity.ownerAttrib.timescaleSetting == 300",
+            "entity.ownerAttrib.timescaleSetting == 200",
+            "entity.ownerAttrib.timescaleSetting == 150",
+            "entity.ownerAttrib.timescaleSetting == 125",
+            "entity.ownerAttrib.timescaleSetting == 100",
+            "entity.ownerAttrib.timescaleSetting == 75",
+            "entity.ownerAttrib.timescaleSetting == 50",
+            "entity.ownerAttrib.timescaleSetting == 25",
+            "entity.ownerAttrib.timescaleSetting == 15"
+          ]
+        },
+        {
+          "time": 0.25,
+          "type": "WAIT"
+        },
+        {
+          "condition": "!entity.ownerAttrib.removeTimescale",
+          "type": "IF",
+          "withElse": false,
+          "thenStep": [
+            {
+              "type": "WAIT_UNTIL",
+              "condition": "entity.ownerAttrib.clearTimescale"
+            }
+          ]
+        }
+      ],
+      "invisible": true,
+      "hp": 0,
+      "stickToSource": "TARGET",
+      "stickFaceAlign": false,
+      "group": "libraryTimescaleGroup",
+      "size": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "config": {},
+      "type": "GENERIC"
     }
   },
   "actions": {

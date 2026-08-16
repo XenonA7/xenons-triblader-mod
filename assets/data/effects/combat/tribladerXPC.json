@@ -13230,6 +13230,14 @@
     ],
     "rudeBusterTrail": [
       {
+        "rumbleType": "RANDOM",
+        "power": "STRONG",
+        "speed": "FASTER",
+        "duration": 0.15,
+        "fade": true,
+        "type": "RUMBLE"
+      },
+      {
         "type": "LOOP_START"
       },
       {
@@ -25239,6 +25247,13 @@
       }
     ],
     "triforceShatter": [
+      {
+        "color": "#631863",
+        "fadeIn": 0,
+        "fadeOut": 0.6,
+        "duration": 0.1,
+        "type": "SCREEN_FLASH"
+      },
       {
         "volume": 1.6,
         "global": false,

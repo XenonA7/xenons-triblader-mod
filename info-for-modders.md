@@ -57,4 +57,10 @@ Thank you to Krypek, Azure Lazuline, Bakafish, Alyxia, and Lubkuluk for helping 
 * plot.xpc.cheatsUnlocked
 
 ### Control Variables
-* tmp.xpcDisableHoming (when true, disables Hexacast homing on THROW_NORMAL, THROW_CHARGED, and Kindling Dance)
+* tmp.xpcMultiplayerAdjustment (when true, enables the following Hexacast balance changes:)
+   * Disable homing for Kindling Dance
+   * Reduced homing projectile turn radius for:
+      * THROW_NORMAL
+      * THROW_CHARGED (for Hexacast2)
+      * Fire Hand
+   * Zir'vitar Strike's targeting segment moves faster, cannot stop, and turns less sharp

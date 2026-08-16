@@ -283,6 +283,58 @@
       ],
       "type": "BALL"
     },
+    "defaultNeutralMultibakery": {
+      "effects": "ball",
+      "speed": 550,
+      "maxBounce": 0,
+      "timer": 1.5,
+      "trail": false,
+      "multiHit": false,
+      "noLightGlow": true,
+      "light": "M",
+      "animation": {
+        "name": "default",
+        "sheet": {
+          "src": "media/entity/balls/default.png",
+          "offX": 192,
+          "offY": 0,
+          "width": 24,
+          "height": 24
+        },
+        "renderMode": "lighter",
+        "time": 0.05,
+        "repeat": false,
+        "frames": [
+          0
+        ]
+      },
+      "attack": {
+        "type": "LIGHT",
+        "element": "NEUTRAL",
+        "damageFactor": 0.6,
+        "reverse": false,
+        "spFactor": 1,
+        "guardable": "",
+        "skillBonus": "RANGED_DMG",
+        "limiter": ""
+      },
+      "timeBoni": null,
+      "behaviors": [
+        {
+          "type": "FOLLOW_TARGET",
+          "steerDegree": 0.15,
+          "adjustTime": 0.3
+        },
+        {
+          "type": "SLOW_DOWN",
+          "speedFactor": 0.1,
+          "fadeOut": 0.033,
+          "pause": 0.3,
+          "fadeIn": 0.2
+        }
+      ],
+      "type": "BALL"
+    },
     "defaultHeat": {
       "effects": "ball-heat",
       "speed": 550,
@@ -335,6 +387,58 @@
         }
       ]
     },
+    "defaultHeatMultibakery": {
+      "effects": "ball-heat",
+      "speed": 550,
+      "maxBounce": 0,
+      "timer": 1.5,
+      "trail": false,
+      "multiHit": false,
+      "noLightGlow": true,
+      "light": "M",
+      "type": "BALL",
+      "animation": {
+        "name": "default",
+        "sheet": {
+          "src": "media/entity/balls/default.png",
+          "offX": 192,
+          "offY": 24,
+          "width": 24,
+          "height": 24
+        },
+        "renderMode": "lighter",
+        "time": 0.05,
+        "repeat": false,
+        "frames": [
+          0
+        ]
+      },
+      "attack": {
+        "type": "LIGHT",
+        "element": "HEAT",
+        "damageFactor": 0.6,
+        "reverse": false,
+        "spFactor": 1,
+        "status": 0.55,
+        "guardable": "",
+        "skillBonus": "RANGED_DMG"
+      },
+      "timeBoni": null,
+      "behaviors": [
+        {
+          "type": "FOLLOW_TARGET",
+          "steerDegree": 0.15,
+          "adjustTime": 0.3
+        },
+        {
+          "type": "SLOW_DOWN",
+          "speedFactor": 0.1,
+          "fadeOut": 0.033,
+          "pause": 0.3,
+          "fadeIn": 0.2
+        }
+      ]
+    },
     "defaultCold": {
       "effects": "ball-cold",
       "speed": 550,
@@ -375,6 +479,57 @@
         {
           "type": "FOLLOW_TARGET",
           "steerDegree": 0.4,
+          "adjustTime": 0.3
+        },
+        {
+          "type": "SLOW_DOWN",
+          "speedFactor": 0.1,
+          "fadeOut": 0.033,
+          "pause": 0.3,
+          "fadeIn": 0.2
+        }
+      ]
+    },
+    "defaultColdMultibakery": {
+      "effects": "ball-cold",
+      "speed": 550,
+      "maxBounce": 0,
+      "timer": 1.5,
+      "trail": false,
+      "multiHit": false,
+      "noLightGlow": true,
+      "light": "M",
+      "type": "BALL",
+      "animation": {
+        "name": "default",
+        "sheet": {
+          "src": "media/entity/balls/default.png ",
+          "offX": 192,
+          "offY": 48,
+          "width": 24,
+          "height": 24
+        },
+        "renderMode": "lighter",
+        "time": 0.05,
+        "repeat": false,
+        "frames": [
+          0
+        ]
+      },
+      "attack": {
+        "type": "LIGHT",
+        "element": "COLD",
+        "damageFactor": 0.6,
+        "spFactor": 1,
+        "status": 0.55,
+        "guardable": "",
+        "skillBonus": "RANGED_DMG"
+      },
+      "timeBoni": null,
+      "behaviors": [
+        {
+          "type": "FOLLOW_TARGET",
+          "steerDegree": 0.15,
           "adjustTime": 0.3
         },
         {
@@ -438,6 +593,58 @@
         }
       ]
     },
+    "defaultShockMultibakery": {
+      "effects": "ball-shock",
+      "speed": 550,
+      "maxBounce": 0,
+      "timer": 1.5,
+      "trail": false,
+      "multiHit": false,
+      "noLightGlow": true,
+      "light": "M",
+      "type": "BALL",
+      "animation": {
+        "name": "default",
+        "sheet": {
+          "src": "media/entity/balls/default.png ",
+          "offX": 192,
+          "offY": 72,
+          "width": 24,
+          "height": 24
+        },
+        "renderMode": "lighter",
+        "time": 0.05,
+        "repeat": false,
+        "frames": [
+          0
+        ]
+      },
+      "attack": {
+        "type": "LIGHT",
+        "element": "SHOCK",
+        "damageFactor": 0.6,
+        "reverse": false,
+        "spFactor": 1,
+        "status": 0.55,
+        "guardable": "",
+        "skillBonus": "RANGED_DMG"
+      },
+      "timeBoni": null,
+      "behaviors": [
+        {
+          "type": "FOLLOW_TARGET",
+          "steerDegree": 0.15,
+          "adjustTime": 0.3
+        },
+        {
+          "type": "SLOW_DOWN",
+          "speedFactor": 0.1,
+          "fadeOut": 0.033,
+          "pause": 0.3,
+          "fadeIn": 0.2
+        }
+      ]
+    },
     "defaultWave": {
       "effects": "ball-wave",
       "speed": 550,
@@ -479,6 +686,58 @@
         {
           "type": "FOLLOW_TARGET",
           "steerDegree": 0.4,
+          "adjustTime": 0.3
+        },
+        {
+          "type": "SLOW_DOWN",
+          "speedFactor": 0.1,
+          "fadeOut": 0.033,
+          "pause": 0.3,
+          "fadeIn": 0.2
+        }
+      ]
+    },
+    "defaultWaveMultibakery": {
+      "effects": "ball-wave",
+      "speed": 550,
+      "maxBounce": 0,
+      "timer": 1.5,
+      "trail": false,
+      "multiHit": false,
+      "noLightGlow": true,
+      "light": "M",
+      "type": "BALL",
+      "animation": {
+        "name": "default",
+        "sheet": {
+          "src": "media/entity/balls/default.png ",
+          "offX": 192,
+          "offY": 96,
+          "width": 24,
+          "height": 24
+        },
+        "renderMode": "lighter",
+        "time": 0.05,
+        "repeat": false,
+        "frames": [
+          0
+        ]
+      },
+      "attack": {
+        "type": "LIGHT",
+        "element": "WAVE",
+        "damageFactor": 0.6,
+        "reverse": false,
+        "spFactor": 1,
+        "status": 0.55,
+        "guardable": "",
+        "skillBonus": "RANGED_DMG"
+      },
+      "timeBoni": null,
+      "behaviors": [
+        {
+          "type": "FOLLOW_TARGET",
+          "steerDegree": 0.15,
           "adjustTime": 0.3
         },
         {
@@ -587,6 +846,57 @@
         }
       ]
     },
+    "chargedNeutralHomingMultibakery": {
+      "effects": "ball",
+      "effectKeys": {
+        "trail": "ballTrailHexaNeutral"
+      },
+      "speed": 600,
+      "maxBounce": 3,
+      "timer": 1.5,
+      "trail": true,
+      "multiHit": false,
+      "noLightGlow": true,
+      "light": "L",
+      "type": "BALL",
+      "animation": {
+        "name": "default",
+        "sheet": {
+          "src": "media/entity/balls/default.png",
+          "offX": 168,
+          "offY": 0,
+          "width": 24,
+          "height": 24
+        },
+        "renderMode": "lighter",
+        "time": 0.05,
+        "repeat": false,
+        "frames": [
+          0
+        ]
+      },
+      "attack": {
+        "type": "HEAVY",
+        "element": "NEUTRAL",
+        "damageFactor": 1.0,
+        "reverse": false,
+        "spFactor": 1,
+        "hints": [
+          "CHARGED",
+          "STANDARD"
+        ],
+        "guardable": "",
+        "skillBonus": "RANGED_DMG"
+      },
+      "timeBoni": null,
+      "behaviors": [
+        {
+          "steerDegree": 0.2,
+          "adjustTime": 0,
+          "type": "FOLLOW_TARGET"
+        }
+      ]
+    },
     "chargedHeat": {
       "effects": "ball-heat",
       "effectKeys": {
@@ -682,6 +992,59 @@
       "behaviors": [
         {
           "steerDegree": 0.35,
+          "adjustTime": 0,
+          "type": "FOLLOW_TARGET"
+        }
+      ]
+    },
+    "chargedHeatHomingMultibakery": {
+      "effects": "ball-heat",
+      "effectKeys": {
+        "trail": "ballTrailHexaHeat"
+      },
+      "speed": 600,
+      "maxBounce": 3,
+      "timer": 1.5,
+      "trail": true,
+      "multiHit": false,
+      "noLightGlow": true,
+      "light": "L",
+      "type": "BALL",
+      "animation": {
+        "name": "default",
+        "sheet": {
+          "src": "media/entity/balls/default.png",
+          "offX": 168,
+          "offY": 24,
+          "width": 24,
+          "height": 24
+        },
+        "renderMode": "lighter",
+        "time": 0.05,
+        "repeat": false,
+        "frames": [
+          0
+        ]
+      },
+      "attack": {
+        "type": "HEAVY",
+        "element": "HEAT",
+        "damageFactor": 1.0,
+        "reverse": false,
+        "spFactor": 1,
+        "status": 1,
+        "hints": [
+          "CHARGED",
+          "STANDARD"
+        ],
+        "guardable": "",
+        "skillBonus": "RANGED_DMG",
+        "limiter": ""
+      },
+      "timeBoni": null,
+      "behaviors": [
+        {
+          "steerDegree": 0.2,
           "adjustTime": 0,
           "type": "FOLLOW_TARGET"
         }
@@ -787,6 +1150,59 @@
         }
       ]
     },
+    "chargedColdHomingMultibakery": {
+      "effects": "ball-cold",
+      "effectKeys": {
+        "trail": "ballTrailHexaCold"
+      },
+      "speed": 600,
+      "maxBounce": 3,
+      "timer": 1.5,
+      "trail": true,
+      "multiHit": false,
+      "noLightGlow": true,
+      "light": "L",
+      "type": "BALL",
+      "animation": {
+        "name": "default",
+        "sheet": {
+          "src": "media/entity/balls/default.png",
+          "offX": 168,
+          "offY": 48,
+          "width": 24,
+          "height": 24
+        },
+        "renderMode": "lighter",
+        "time": 0.05,
+        "repeat": false,
+        "frames": [
+          0
+        ]
+      },
+      "attack": {
+        "type": "HEAVY",
+        "element": "COLD",
+        "damageFactor": 1.0,
+        "reverse": false,
+        "spFactor": 1,
+        "status": 1,
+        "hints": [
+          "CHARGED",
+          "STANDARD"
+        ],
+        "guardable": "",
+        "skillBonus": "RANGED_DMG",
+        "limiter": ""
+      },
+      "timeBoni": null,
+      "behaviors": [
+        {
+          "steerDegree": 0.2,
+          "adjustTime": 0,
+          "type": "FOLLOW_TARGET"
+        }
+      ]
+    },
     "chargedShock": {
       "effects": "ball-shock",
       "effectKeys": {
@@ -887,6 +1303,59 @@
         }
       ]
     },
+    "chargedShockHomingMultibakery": {
+      "effects": "ball-shock",
+      "effectKeys": {
+        "trail": "ballTrailHexaShock"
+      },
+      "speed": 600,
+      "maxBounce": 3,
+      "timer": 1.5,
+      "trail": true,
+      "multiHit": false,
+      "noLightGlow": true,
+      "light": "L",
+      "type": "BALL",
+      "animation": {
+        "name": "default",
+        "sheet": {
+          "src": "media/entity/balls/default.png",
+          "offX": 168,
+          "offY": 72,
+          "width": 24,
+          "height": 24
+        },
+        "renderMode": "lighter",
+        "time": 0.05,
+        "repeat": false,
+        "frames": [
+          0
+        ]
+      },
+      "attack": {
+        "type": "HEAVY",
+        "element": "SHOCK",
+        "damageFactor": 1.0,
+        "reverse": false,
+        "spFactor": 1,
+        "status": 1,
+        "hints": [
+          "CHARGED",
+          "STANDARD"
+        ],
+        "guardable": "",
+        "skillBonus": "RANGED_DMG",
+        "limiter": ""
+      },
+      "timeBoni": null,
+      "behaviors": [
+        {
+          "steerDegree": 0.2,
+          "adjustTime": 0,
+          "type": "FOLLOW_TARGET"
+        }
+      ]
+    },
     "chargedWave": {
       "effects": "ball-wave",
       "effectKeys": {
@@ -982,6 +1451,59 @@
       "behaviors": [
         {
           "steerDegree": 0.35,
+          "adjustTime": 0,
+          "type": "FOLLOW_TARGET"
+        }
+      ]
+    },
+    "chargedWaveHomingMultibakery": {
+      "effects": "ball-wave",
+      "effectKeys": {
+        "trail": "ballTrailHexaWave"
+      },
+      "speed": 600,
+      "maxBounce": 3,
+      "timer": 1.5,
+      "trail": true,
+      "multiHit": false,
+      "noLightGlow": true,
+      "light": "L",
+      "type": "BALL",
+      "animation": {
+        "name": "default",
+        "sheet": {
+          "src": "media/entity/balls/default.png",
+          "offX": 168,
+          "offY": 96,
+          "width": 24,
+          "height": 24
+        },
+        "renderMode": "lighter",
+        "time": 0.05,
+        "repeat": false,
+        "frames": [
+          0
+        ]
+      },
+      "attack": {
+        "type": "HEAVY",
+        "element": "WAVE",
+        "damageFactor": 1.0,
+        "reverse": false,
+        "spFactor": 1,
+        "status": 1,
+        "hints": [
+          "CHARGED",
+          "STANDARD"
+        ],
+        "guardable": "",
+        "skillBonus": "RANGED_DMG",
+        "limiter": ""
+      },
+      "timeBoni": null,
+      "behaviors": [
+        {
+          "steerDegree": 0.2,
           "adjustTime": 0,
           "type": "FOLLOW_TARGET"
         }
@@ -3464,7 +3986,7 @@
         {
           "withElse": true,
           "type": "IF",
-          "condition": "tmp.xpcDisableHoming",
+          "condition": "tmp.xpcMultiplayerAdjustment",
           "thenStep": [
             {
               "align": "BOTTOM",
@@ -3663,7 +4185,7 @@
         {
           "withElse": true,
           "type": "IF",
-          "condition": "tmp.xpcDisableHoming",
+          "condition": "tmp.xpcMultiplayerAdjustment",
           "thenStep": [
             {
               "align": "BOTTOM",
@@ -32725,7 +33247,7 @@
         },
         {
           "align": "BASE",
-          "centralAngle": 1,
+          "centralAngle": 0.15,
           "angleVary": 0,
           "startDist": 0,
           "startDistCollide": "CLOSER",
@@ -33292,7 +33814,7 @@
         },
         {
           "align": "BASE",
-          "centralAngle": 1,
+          "centralAngle": 0.15,
           "angleVary": 0,
           "startDist": 0,
           "startDistCollide": "CLOSER",
@@ -46736,7 +47258,7 @@
         {
           "withElse": false,
           "type": "IF",
-          "condition": "!tmp.xpcDisableHoming",
+          "condition": "!tmp.xpcMultiplayerAdjustment",
           "thenStep": [
             {
               "searchType": "IN_VIEW",
@@ -55165,7 +55687,6 @@
                 "z": 0
               }
             }
-
           ],
           "elseStep": [
             {
@@ -59748,7 +60269,7 @@
               {
                 "withElse": false,
                 "type": "IF",
-                "condition": "!combat.facingPuzzle && !tmp.xpcDisableHoming",
+                "condition": "!combat.facingPuzzle",
                 "thenStep": [
                   {
                     "searchType": "IN_VIEW",
@@ -59799,27 +60320,59 @@
                     "condition": "entity.hasTmpTarget",
                     "thenStep": [
                       {
-                        "align": "BOTTOM",
-                        "centralAngle": 0.2,
-                        "angleVary": 0.01,
-                        "startDist": 8,
-                        "startDistCollide": "CLOSER",
-                        "random": false,
-                        "clockwise": false,
-                        "flipLeftFace": 0,
-                        "circularArea": false,
-                        "uniformDir": 0,
-                        "delay": 0,
-                        "repeat": false,
-                        "duration": 0.3,
-                        "proxy": "defaultNeutral",
-                        "offset": {
-                          "x": 0,
-                          "y": 0,
-                          "z": 12
-                        },
-                        "count": 3,
-                        "type": "SHOOT_PROXY_RANGE"
+                        "withElse": true,
+                        "type": "IF",
+                        "condition": "tmp.xpcMultiplayerAdjustment",
+                        "thenStep": [
+                          {
+                            "align": "BOTTOM",
+                            "centralAngle": 0.1,
+                            "angleVary": 0.01,
+                            "startDist": 8,
+                            "startDistCollide": "CLOSER",
+                            "random": false,
+                            "clockwise": false,
+                            "flipLeftFace": 0,
+                            "circularArea": false,
+                            "uniformDir": 0,
+                            "delay": 0,
+                            "repeat": false,
+                            "duration": 0.3,
+                            "proxy": "defaultNeutralMultibakery",
+                            "offset": {
+                              "x": 0,
+                              "y": 0,
+                              "z": 12
+                            },
+                            "count": 3,
+                            "type": "SHOOT_PROXY_RANGE"
+                          }
+                        ],
+                        "elseStep": [
+                          {
+                            "align": "BOTTOM",
+                            "centralAngle": 0.2,
+                            "angleVary": 0.01,
+                            "startDist": 8,
+                            "startDistCollide": "CLOSER",
+                            "random": false,
+                            "clockwise": false,
+                            "flipLeftFace": 0,
+                            "circularArea": false,
+                            "uniformDir": 0,
+                            "delay": 0,
+                            "repeat": false,
+                            "duration": 0.3,
+                            "proxy": "defaultNeutral",
+                            "offset": {
+                              "x": 0,
+                              "y": 0,
+                              "z": 12
+                            },
+                            "count": 3,
+                            "type": "SHOOT_PROXY_RANGE"
+                          }
+                        ]
                       }
                     ],
                     "elseStep": [
@@ -59887,27 +60440,59 @@
                     "condition": "entity.hasTmpTarget",
                     "thenStep": [
                       {
-                        "align": "BOTTOM",
-                        "centralAngle": 0.2,
-                        "angleVary": 0.01,
-                        "startDist": 8,
-                        "startDistCollide": "CLOSER",
-                        "random": false,
-                        "clockwise": false,
-                        "flipLeftFace": 0,
-                        "circularArea": false,
-                        "uniformDir": 0,
-                        "delay": 0,
-                        "repeat": false,
-                        "duration": 0.3,
-                        "proxy": "defaultHeat",
-                        "offset": {
-                          "x": 0,
-                          "y": 0,
-                          "z": 12
-                        },
-                        "count": 3,
-                        "type": "SHOOT_PROXY_RANGE"
+                        "withElse": true,
+                        "type": "IF",
+                        "condition": "tmp.xpcMultiplayerAdjustment",
+                        "thenStep": [
+                          {
+                            "align": "BOTTOM",
+                            "centralAngle": 0.1,
+                            "angleVary": 0.01,
+                            "startDist": 8,
+                            "startDistCollide": "CLOSER",
+                            "random": false,
+                            "clockwise": false,
+                            "flipLeftFace": 0,
+                            "circularArea": false,
+                            "uniformDir": 0,
+                            "delay": 0,
+                            "repeat": false,
+                            "duration": 0.3,
+                            "proxy": "defaultHeatMultibakery",
+                            "offset": {
+                              "x": 0,
+                              "y": 0,
+                              "z": 12
+                            },
+                            "count": 3,
+                            "type": "SHOOT_PROXY_RANGE"
+                          }
+                        ],
+                        "elseStep": [
+                          {
+                            "align": "BOTTOM",
+                            "centralAngle": 0.2,
+                            "angleVary": 0.01,
+                            "startDist": 8,
+                            "startDistCollide": "CLOSER",
+                            "random": false,
+                            "clockwise": false,
+                            "flipLeftFace": 0,
+                            "circularArea": false,
+                            "uniformDir": 0,
+                            "delay": 0,
+                            "repeat": false,
+                            "duration": 0.3,
+                            "proxy": "defaultHeat",
+                            "offset": {
+                              "x": 0,
+                              "y": 0,
+                              "z": 12
+                            },
+                            "count": 3,
+                            "type": "SHOOT_PROXY_RANGE"
+                          }
+                        ]
                       }
                     ],
                     "elseStep": [
@@ -59975,27 +60560,59 @@
                     "condition": "entity.hasTmpTarget",
                     "thenStep": [
                       {
-                        "align": "BOTTOM",
-                        "centralAngle": 0.2,
-                        "angleVary": 0.01,
-                        "startDist": 8,
-                        "startDistCollide": "CLOSER",
-                        "random": false,
-                        "clockwise": false,
-                        "flipLeftFace": 0,
-                        "circularArea": false,
-                        "uniformDir": 0,
-                        "delay": 0,
-                        "repeat": false,
-                        "duration": 0.3,
-                        "proxy": "defaultCold",
-                        "offset": {
-                          "x": 0,
-                          "y": 0,
-                          "z": 12
-                        },
-                        "count": 3,
-                        "type": "SHOOT_PROXY_RANGE"
+                        "withElse": true,
+                        "type": "IF",
+                        "condition": "tmp.xpcMultiplayerAdjustment",
+                        "thenStep": [
+                          {
+                            "align": "BOTTOM",
+                            "centralAngle": 0.1,
+                            "angleVary": 0.01,
+                            "startDist": 8,
+                            "startDistCollide": "CLOSER",
+                            "random": false,
+                            "clockwise": false,
+                            "flipLeftFace": 0,
+                            "circularArea": false,
+                            "uniformDir": 0,
+                            "delay": 0,
+                            "repeat": false,
+                            "duration": 0.3,
+                            "proxy": "defaultColdMultibakery",
+                            "offset": {
+                              "x": 0,
+                              "y": 0,
+                              "z": 12
+                            },
+                            "count": 3,
+                            "type": "SHOOT_PROXY_RANGE"
+                          }
+                        ],
+                        "elseStep": [
+                          {
+                            "align": "BOTTOM",
+                            "centralAngle": 0.2,
+                            "angleVary": 0.01,
+                            "startDist": 8,
+                            "startDistCollide": "CLOSER",
+                            "random": false,
+                            "clockwise": false,
+                            "flipLeftFace": 0,
+                            "circularArea": false,
+                            "uniformDir": 0,
+                            "delay": 0,
+                            "repeat": false,
+                            "duration": 0.3,
+                            "proxy": "defaultCold",
+                            "offset": {
+                              "x": 0,
+                              "y": 0,
+                              "z": 12
+                            },
+                            "count": 3,
+                            "type": "SHOOT_PROXY_RANGE"
+                          }
+                        ]
                       }
                     ],
                     "elseStep": [
@@ -60063,27 +60680,59 @@
                     "condition": "entity.hasTmpTarget",
                     "thenStep": [
                       {
-                        "align": "BOTTOM",
-                        "centralAngle": 0.2,
-                        "angleVary": 0.01,
-                        "startDist": 8,
-                        "startDistCollide": "CLOSER",
-                        "random": false,
-                        "clockwise": false,
-                        "flipLeftFace": 0,
-                        "circularArea": false,
-                        "uniformDir": 0,
-                        "delay": 0,
-                        "repeat": false,
-                        "duration": 0.3,
-                        "proxy": "defaultShock",
-                        "offset": {
-                          "x": 0,
-                          "y": 0,
-                          "z": 12
-                        },
-                        "count": 3,
-                        "type": "SHOOT_PROXY_RANGE"
+                        "withElse": true,
+                        "type": "IF",
+                        "condition": "tmp.xpcMultiplayerAdjustment",
+                        "thenStep": [
+                          {
+                            "align": "BOTTOM",
+                            "centralAngle": 0.1,
+                            "angleVary": 0.01,
+                            "startDist": 8,
+                            "startDistCollide": "CLOSER",
+                            "random": false,
+                            "clockwise": false,
+                            "flipLeftFace": 0,
+                            "circularArea": false,
+                            "uniformDir": 0,
+                            "delay": 0,
+                            "repeat": false,
+                            "duration": 0.3,
+                            "proxy": "defaultShockMultibakery",
+                            "offset": {
+                              "x": 0,
+                              "y": 0,
+                              "z": 12
+                            },
+                            "count": 3,
+                            "type": "SHOOT_PROXY_RANGE"
+                          }
+                        ],
+                        "elseStep": [
+                          {
+                            "align": "BOTTOM",
+                            "centralAngle": 0.2,
+                            "angleVary": 0.01,
+                            "startDist": 8,
+                            "startDistCollide": "CLOSER",
+                            "random": false,
+                            "clockwise": false,
+                            "flipLeftFace": 0,
+                            "circularArea": false,
+                            "uniformDir": 0,
+                            "delay": 0,
+                            "repeat": false,
+                            "duration": 0.3,
+                            "proxy": "defaultShock",
+                            "offset": {
+                              "x": 0,
+                              "y": 0,
+                              "z": 12
+                            },
+                            "count": 3,
+                            "type": "SHOOT_PROXY_RANGE"
+                          }
+                        ]
                       }
                     ],
                     "elseStep": [
@@ -60151,27 +60800,59 @@
                     "condition": "entity.hasTmpTarget",
                     "thenStep": [
                       {
-                        "align": "BOTTOM",
-                        "centralAngle": 0.2,
-                        "angleVary": 0.01,
-                        "startDist": 8,
-                        "startDistCollide": "CLOSER",
-                        "random": false,
-                        "clockwise": false,
-                        "flipLeftFace": 0,
-                        "circularArea": false,
-                        "uniformDir": 0,
-                        "delay": 0,
-                        "repeat": false,
-                        "duration": 0.3,
-                        "proxy": "defaultWave",
-                        "offset": {
-                          "x": 0,
-                          "y": 0,
-                          "z": 12
-                        },
-                        "count": 3,
-                        "type": "SHOOT_PROXY_RANGE"
+                        "withElse": true,
+                        "type": "IF",
+                        "condition": "tmp.xpcMultiplayerAdjustment",
+                        "thenStep": [
+                          {
+                            "align": "BOTTOM",
+                            "centralAngle": 0.1,
+                            "angleVary": 0.01,
+                            "startDist": 8,
+                            "startDistCollide": "CLOSER",
+                            "random": false,
+                            "clockwise": false,
+                            "flipLeftFace": 0,
+                            "circularArea": false,
+                            "uniformDir": 0,
+                            "delay": 0,
+                            "repeat": false,
+                            "duration": 0.3,
+                            "proxy": "defaultWaveMultibakery",
+                            "offset": {
+                              "x": 0,
+                              "y": 0,
+                              "z": 12
+                            },
+                            "count": 3,
+                            "type": "SHOOT_PROXY_RANGE"
+                          }
+                        ],
+                        "elseStep": [
+                          {
+                            "align": "BOTTOM",
+                            "centralAngle": 0.2,
+                            "angleVary": 0.01,
+                            "startDist": 8,
+                            "startDistCollide": "CLOSER",
+                            "random": false,
+                            "clockwise": false,
+                            "flipLeftFace": 0,
+                            "circularArea": false,
+                            "uniformDir": 0,
+                            "delay": 0,
+                            "repeat": false,
+                            "duration": 0.3,
+                            "proxy": "defaultWave",
+                            "offset": {
+                              "x": 0,
+                              "y": 0,
+                              "z": 12
+                            },
+                            "count": 3,
+                            "type": "SHOOT_PROXY_RANGE"
+                          }
+                        ]
                       }
                     ],
                     "elseStep": [
@@ -60332,7 +61013,7 @@
               {
                 "withElse": false,
                 "type": "IF",
-                "condition": "!combat.facingPuzzle && !tmp.xpcDisableHoming",
+                "condition": "!combat.facingPuzzle",
                 "thenStep": [
                   {
                     "searchType": "IN_VIEW",
@@ -60383,27 +61064,59 @@
                     "condition": "entity.hasTmpTarget",
                     "thenStep": [
                       {
-                        "align": "BOTTOM",
-                        "centralAngle": 0.2,
-                        "angleVary": 0.01,
-                        "startDist": 8,
-                        "startDistCollide": "CLOSER",
-                        "random": false,
-                        "clockwise": false,
-                        "flipLeftFace": 0,
-                        "circularArea": false,
-                        "uniformDir": 0,
-                        "delay": 0,
-                        "repeat": false,
-                        "duration": 0.3,
-                        "proxy": "defaultNeutral",
-                        "offset": {
-                          "x": 0,
-                          "y": 0,
-                          "z": 12
-                        },
-                        "count": 3,
-                        "type": "SHOOT_PROXY_RANGE"
+                        "withElse": true,
+                        "type": "IF",
+                        "condition": "tmp.xpcMultiplayerAdjustment",
+                        "thenStep": [
+                          {
+                            "align": "BOTTOM",
+                            "centralAngle": 0.1,
+                            "angleVary": 0.01,
+                            "startDist": 8,
+                            "startDistCollide": "CLOSER",
+                            "random": false,
+                            "clockwise": false,
+                            "flipLeftFace": 0,
+                            "circularArea": false,
+                            "uniformDir": 0,
+                            "delay": 0,
+                            "repeat": false,
+                            "duration": 0.3,
+                            "proxy": "defaultNeutralMultibakery",
+                            "offset": {
+                              "x": 0,
+                              "y": 0,
+                              "z": 12
+                            },
+                            "count": 3,
+                            "type": "SHOOT_PROXY_RANGE"
+                          }
+                        ],
+                        "elseStep": [
+                          {
+                            "align": "BOTTOM",
+                            "centralAngle": 0.2,
+                            "angleVary": 0.01,
+                            "startDist": 8,
+                            "startDistCollide": "CLOSER",
+                            "random": false,
+                            "clockwise": false,
+                            "flipLeftFace": 0,
+                            "circularArea": false,
+                            "uniformDir": 0,
+                            "delay": 0,
+                            "repeat": false,
+                            "duration": 0.3,
+                            "proxy": "defaultNeutral",
+                            "offset": {
+                              "x": 0,
+                              "y": 0,
+                              "z": 12
+                            },
+                            "count": 3,
+                            "type": "SHOOT_PROXY_RANGE"
+                          }
+                        ]
                       }
                     ],
                     "elseStep": [
@@ -60471,27 +61184,59 @@
                     "condition": "entity.hasTmpTarget",
                     "thenStep": [
                       {
-                        "align": "BOTTOM",
-                        "centralAngle": 0.2,
-                        "angleVary": 0.01,
-                        "startDist": 8,
-                        "startDistCollide": "CLOSER",
-                        "random": false,
-                        "clockwise": false,
-                        "flipLeftFace": 0,
-                        "circularArea": false,
-                        "uniformDir": 0,
-                        "delay": 0,
-                        "repeat": false,
-                        "duration": 0.3,
-                        "proxy": "defaultHeat",
-                        "offset": {
-                          "x": 0,
-                          "y": 0,
-                          "z": 12
-                        },
-                        "count": 3,
-                        "type": "SHOOT_PROXY_RANGE"
+                        "withElse": true,
+                        "type": "IF",
+                        "condition": "tmp.xpcMultiplayerAdjustment",
+                        "thenStep": [
+                          {
+                            "align": "BOTTOM",
+                            "centralAngle": 0.1,
+                            "angleVary": 0.01,
+                            "startDist": 8,
+                            "startDistCollide": "CLOSER",
+                            "random": false,
+                            "clockwise": false,
+                            "flipLeftFace": 0,
+                            "circularArea": false,
+                            "uniformDir": 0,
+                            "delay": 0,
+                            "repeat": false,
+                            "duration": 0.3,
+                            "proxy": "defaultHeatMultibakery",
+                            "offset": {
+                              "x": 0,
+                              "y": 0,
+                              "z": 12
+                            },
+                            "count": 3,
+                            "type": "SHOOT_PROXY_RANGE"
+                          }
+                        ],
+                        "elseStep": [
+                          {
+                            "align": "BOTTOM",
+                            "centralAngle": 0.2,
+                            "angleVary": 0.01,
+                            "startDist": 8,
+                            "startDistCollide": "CLOSER",
+                            "random": false,
+                            "clockwise": false,
+                            "flipLeftFace": 0,
+                            "circularArea": false,
+                            "uniformDir": 0,
+                            "delay": 0,
+                            "repeat": false,
+                            "duration": 0.3,
+                            "proxy": "defaultHeat",
+                            "offset": {
+                              "x": 0,
+                              "y": 0,
+                              "z": 12
+                            },
+                            "count": 3,
+                            "type": "SHOOT_PROXY_RANGE"
+                          }
+                        ]
                       }
                     ],
                     "elseStep": [
@@ -60559,27 +61304,59 @@
                     "condition": "entity.hasTmpTarget",
                     "thenStep": [
                       {
-                        "align": "BOTTOM",
-                        "centralAngle": 0.2,
-                        "angleVary": 0.01,
-                        "startDist": 8,
-                        "startDistCollide": "CLOSER",
-                        "random": false,
-                        "clockwise": false,
-                        "flipLeftFace": 0,
-                        "circularArea": false,
-                        "uniformDir": 0,
-                        "delay": 0,
-                        "repeat": false,
-                        "duration": 0.3,
-                        "proxy": "defaultCold",
-                        "offset": {
-                          "x": 0,
-                          "y": 0,
-                          "z": 12
-                        },
-                        "count": 3,
-                        "type": "SHOOT_PROXY_RANGE"
+                        "withElse": true,
+                        "type": "IF",
+                        "condition": "tmp.xpcMultiplayerAdjustment",
+                        "thenStep": [
+                          {
+                            "align": "BOTTOM",
+                            "centralAngle": 0.1,
+                            "angleVary": 0.01,
+                            "startDist": 8,
+                            "startDistCollide": "CLOSER",
+                            "random": false,
+                            "clockwise": false,
+                            "flipLeftFace": 0,
+                            "circularArea": false,
+                            "uniformDir": 0,
+                            "delay": 0,
+                            "repeat": false,
+                            "duration": 0.3,
+                            "proxy": "defaultColdMultibakery",
+                            "offset": {
+                              "x": 0,
+                              "y": 0,
+                              "z": 12
+                            },
+                            "count": 3,
+                            "type": "SHOOT_PROXY_RANGE"
+                          }
+                        ],
+                        "elseStep": [
+                          {
+                            "align": "BOTTOM",
+                            "centralAngle": 0.2,
+                            "angleVary": 0.01,
+                            "startDist": 8,
+                            "startDistCollide": "CLOSER",
+                            "random": false,
+                            "clockwise": false,
+                            "flipLeftFace": 0,
+                            "circularArea": false,
+                            "uniformDir": 0,
+                            "delay": 0,
+                            "repeat": false,
+                            "duration": 0.3,
+                            "proxy": "defaultCold",
+                            "offset": {
+                              "x": 0,
+                              "y": 0,
+                              "z": 12
+                            },
+                            "count": 3,
+                            "type": "SHOOT_PROXY_RANGE"
+                          }
+                        ]
                       }
                     ],
                     "elseStep": [
@@ -60647,27 +61424,59 @@
                     "condition": "entity.hasTmpTarget",
                     "thenStep": [
                       {
-                        "align": "BOTTOM",
-                        "centralAngle": 0.2,
-                        "angleVary": 0.01,
-                        "startDist": 8,
-                        "startDistCollide": "CLOSER",
-                        "random": false,
-                        "clockwise": false,
-                        "flipLeftFace": 0,
-                        "circularArea": false,
-                        "uniformDir": 0,
-                        "delay": 0,
-                        "repeat": false,
-                        "duration": 0.3,
-                        "proxy": "defaultShock",
-                        "offset": {
-                          "x": 0,
-                          "y": 0,
-                          "z": 12
-                        },
-                        "count": 3,
-                        "type": "SHOOT_PROXY_RANGE"
+                        "withElse": true,
+                        "type": "IF",
+                        "condition": "tmp.xpcMultiplayerAdjustment",
+                        "thenStep": [
+                          {
+                            "align": "BOTTOM",
+                            "centralAngle": 0.1,
+                            "angleVary": 0.01,
+                            "startDist": 8,
+                            "startDistCollide": "CLOSER",
+                            "random": false,
+                            "clockwise": false,
+                            "flipLeftFace": 0,
+                            "circularArea": false,
+                            "uniformDir": 0,
+                            "delay": 0,
+                            "repeat": false,
+                            "duration": 0.3,
+                            "proxy": "defaultShockMultibakery",
+                            "offset": {
+                              "x": 0,
+                              "y": 0,
+                              "z": 12
+                            },
+                            "count": 3,
+                            "type": "SHOOT_PROXY_RANGE"
+                          }
+                        ],
+                        "elseStep": [
+                          {
+                            "align": "BOTTOM",
+                            "centralAngle": 0.2,
+                            "angleVary": 0.01,
+                            "startDist": 8,
+                            "startDistCollide": "CLOSER",
+                            "random": false,
+                            "clockwise": false,
+                            "flipLeftFace": 0,
+                            "circularArea": false,
+                            "uniformDir": 0,
+                            "delay": 0,
+                            "repeat": false,
+                            "duration": 0.3,
+                            "proxy": "defaultShock",
+                            "offset": {
+                              "x": 0,
+                              "y": 0,
+                              "z": 12
+                            },
+                            "count": 3,
+                            "type": "SHOOT_PROXY_RANGE"
+                          }
+                        ]
                       }
                     ],
                     "elseStep": [
@@ -60735,27 +61544,59 @@
                     "condition": "entity.hasTmpTarget",
                     "thenStep": [
                       {
-                        "align": "BOTTOM",
-                        "centralAngle": 0.2,
-                        "angleVary": 0.01,
-                        "startDist": 8,
-                        "startDistCollide": "CLOSER",
-                        "random": false,
-                        "clockwise": false,
-                        "flipLeftFace": 0,
-                        "circularArea": false,
-                        "uniformDir": 0,
-                        "delay": 0,
-                        "repeat": false,
-                        "duration": 0.3,
-                        "proxy": "defaultWave",
-                        "offset": {
-                          "x": 0,
-                          "y": 0,
-                          "z": 12
-                        },
-                        "count": 3,
-                        "type": "SHOOT_PROXY_RANGE"
+                        "withElse": true,
+                        "type": "IF",
+                        "condition": "tmp.xpcMultiplayerAdjustment",
+                        "thenStep": [
+                          {
+                            "align": "BOTTOM",
+                            "centralAngle": 0.1,
+                            "angleVary": 0.01,
+                            "startDist": 8,
+                            "startDistCollide": "CLOSER",
+                            "random": false,
+                            "clockwise": false,
+                            "flipLeftFace": 0,
+                            "circularArea": false,
+                            "uniformDir": 0,
+                            "delay": 0,
+                            "repeat": false,
+                            "duration": 0.3,
+                            "proxy": "defaultWaveMultibakery",
+                            "offset": {
+                              "x": 0,
+                              "y": 0,
+                              "z": 12
+                            },
+                            "count": 3,
+                            "type": "SHOOT_PROXY_RANGE"
+                          }
+                        ],
+                        "elseStep": [
+                          {
+                            "align": "BOTTOM",
+                            "centralAngle": 0.2,
+                            "angleVary": 0.01,
+                            "startDist": 8,
+                            "startDistCollide": "CLOSER",
+                            "random": false,
+                            "clockwise": false,
+                            "flipLeftFace": 0,
+                            "circularArea": false,
+                            "uniformDir": 0,
+                            "delay": 0,
+                            "repeat": false,
+                            "duration": 0.3,
+                            "proxy": "defaultWave",
+                            "offset": {
+                              "x": 0,
+                              "y": 0,
+                              "z": 12
+                            },
+                            "count": 3,
+                            "type": "SHOOT_PROXY_RANGE"
+                          }
+                        ]
                       }
                     ],
                     "elseStep": [
@@ -60939,7 +61780,7 @@
               {
                 "withElse": false,
                 "type": "IF",
-                "condition": "!combat.facingPuzzle && !tmp.xpcDisableHoming",
+                "condition": "!combat.facingPuzzle",
                 "thenStep": [
                   {
                     "searchType": "IN_VIEW",
@@ -61334,7 +62175,7 @@
               {
                 "withElse": false,
                 "type": "IF",
-                "condition": "!combat.facingPuzzle && !tmp.xpcDisableHoming",
+                "condition": "!combat.facingPuzzle",
                 "thenStep": [
                   {
                     "searchType": "IN_VIEW",
@@ -68608,7 +69449,7 @@
                 "type": "SET_Z_VEL"
               },
               {
-                "value": 1.4,
+                "value": 2.0,
                 "type": "SET_Z_GRAVITY_FACTOR"
               },
               {
@@ -68640,7 +69481,7 @@
                 "anim": "sweepEndInstant"
               },
               {
-                "value": 1.75,
+                "value": 2.5,
                 "type": "SET_Z_GRAVITY_FACTOR"
               },
               {
@@ -83386,7 +84227,7 @@
                 "wait": false,
                 "viaWalkConfig": false,
                 "type": "SHOW_ANIMATION",
-                "anim": "dashFast"
+                "anim": "dashRevFast"
               },
               {
                 "value": 50,
@@ -83492,7 +84333,7 @@
                 "wait": false,
                 "viaWalkConfig": false,
                 "type": "SHOW_ANIMATION",
-                "anim": "sweepEnd"
+                "anim": "sweepRevEnd"
               },
               {
                 "type": "SET_ATTRIB_BOOL",
@@ -85450,15 +86291,35 @@
             "type": "WAIT"
           },
           {
-            "value": 115,
-            "type": "SET_SPEED"
-          },
-          {
-            "time": 0.5,
-            "rotateSpeed": 10,
-            "stopBeforeEdge": true,
-            "allowStop": true,
-            "type": "PLAYER_MOVE_TO_DIR"
+            "withElse": true,
+            "type": "IF",
+            "condition": "tmp.xpcMultiplayerAdjustment",
+            "thenStep": [
+              {
+                "value": 225,
+                "type": "SET_SPEED"
+              },
+              {
+                "time": 0.5,
+                "rotateSpeed": 2.0,
+                "stopBeforeEdge": false,
+                "allowStop": false,
+                "type": "PLAYER_MOVE_TO_DIR"
+              }
+            ],
+            "elseStep": [
+              {
+                "value": 115,
+                "type": "SET_SPEED"
+              },
+              {
+                "time": 0.5,
+                "rotateSpeed": 10,
+                "stopBeforeEdge": true,
+                "allowStop": true,
+                "type": "PLAYER_MOVE_TO_DIR"
+              }
+            ]
           },
           {
             "duration": -1,
@@ -85503,11 +86364,27 @@
             }
           },
           {
-            "time": 2.5,
-            "rotateSpeed": 10,
-            "stopBeforeEdge": true,
-            "allowStop": true,
-            "type": "PLAYER_MOVE_TO_DIR"
+            "withElse": true,
+            "type": "IF",
+            "condition": "tmp.xpcMultiplayerAdjustment",
+            "thenStep": [
+              {
+                "time": 2.5,
+                "rotateSpeed": 2.0,
+                "stopBeforeEdge": false,
+                "allowStop": false,
+                "type": "PLAYER_MOVE_TO_DIR"
+              }
+            ],
+            "elseStep": [
+              {
+                "time": 2.5,
+                "rotateSpeed": 10,
+                "stopBeforeEdge": true,
+                "allowStop": true,
+                "type": "PLAYER_MOVE_TO_DIR"
+              }
+            ]
           },
           {
             "factor": 0.05,
@@ -86910,7 +87787,6 @@
                   "z": 0
                 }
               }
-
             ],
             "elseStep": [
               {
@@ -87243,7 +88119,6 @@
                   "z": 0
                 }
               }
-
             ],
             "elseStep": [
               {
@@ -87311,7 +88186,6 @@
               "z": 12
             }
           },
-
           {
             "time": 0.2,
             "type": "WAIT"

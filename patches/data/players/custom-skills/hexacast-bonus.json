@@ -15412,7 +15412,7 @@
               {
                 "withElse": false,
                 "type": "IF",
-                "condition": "!combat.facingPuzzle && !tmp.xpcDisableHoming",
+                "condition": "!combat.facingPuzzle",
                 "thenStep": [
                   {
                     "searchType": "IN_VIEW",
@@ -15807,7 +15807,7 @@
               {
                 "withElse": false,
                 "type": "IF",
-                "condition": "!combat.facingPuzzle && !tmp.xpcDisableHoming",
+                "condition": "!combat.facingPuzzle",
                 "thenStep": [
                   {
                     "searchType": "IN_VIEW",
@@ -16162,7 +16162,7 @@
               {
                 "withElse": false,
                 "type": "IF",
-                "condition": "!combat.facingPuzzle && !tmp.xpcDisableHoming",
+                "condition": "!combat.facingPuzzle",
                 "thenStep": [
                   {
                     "searchType": "IN_VIEW",
@@ -16204,27 +16204,59 @@
                 ],
                 "thenStep": [
                   {
-                    "align": "BOTTOM",
-                    "centralAngle": 0,
-                    "angleVary": 0,
-                    "startDist": 20,
-                    "startDistCollide": "CLOSER",
-                    "random": false,
-                    "clockwise": false,
-                    "flipLeftFace": 0,
-                    "circularArea": false,
-                    "uniformDir": 0,
-                    "delay": 0,
-                    "repeat": false,
-                    "duration": 0,
-                    "proxy": "chargedNeutralHoming",
-                    "offset": {
-                      "x": 0,
-                      "y": 0,
-                      "z": 12
-                    },
-                    "count": 1,
-                    "type": "SHOOT_PROXY_RANGE"
+                    "withElse": true,
+                    "type": "IF",
+                    "condition": "tmp.xpcMultiplayerAdjustment",
+                    "thenStep": [
+                      {
+                        "align": "BOTTOM",
+                        "centralAngle": 0,
+                        "angleVary": 0,
+                        "startDist": 20,
+                        "startDistCollide": "CLOSER",
+                        "random": false,
+                        "clockwise": false,
+                        "flipLeftFace": 0,
+                        "circularArea": false,
+                        "uniformDir": 0,
+                        "delay": 0,
+                        "repeat": false,
+                        "duration": 0,
+                        "proxy": "chargedNeutralHomingMultibakery",
+                        "offset": {
+                          "x": 0,
+                          "y": 0,
+                          "z": 12
+                        },
+                        "count": 1,
+                        "type": "SHOOT_PROXY_RANGE"
+                      }
+                    ],
+                    "elseStep": [
+                      {
+                        "align": "BOTTOM",
+                        "centralAngle": 0,
+                        "angleVary": 0,
+                        "startDist": 20,
+                        "startDistCollide": "CLOSER",
+                        "random": false,
+                        "clockwise": false,
+                        "flipLeftFace": 0,
+                        "circularArea": false,
+                        "uniformDir": 0,
+                        "delay": 0,
+                        "repeat": false,
+                        "duration": 0,
+                        "proxy": "chargedNeutralHoming",
+                        "offset": {
+                          "x": 0,
+                          "y": 0,
+                          "z": 12
+                        },
+                        "count": 1,
+                        "type": "SHOOT_PROXY_RANGE"
+                      }
+                    ]
                   }
                 ]
               },
@@ -16240,27 +16272,59 @@
                 ],
                 "thenStep": [
                   {
-                    "align": "BOTTOM",
-                    "centralAngle": 0,
-                    "angleVary": 0,
-                    "startDist": 20,
-                    "startDistCollide": "CLOSER",
-                    "random": false,
-                    "clockwise": false,
-                    "flipLeftFace": 0,
-                    "circularArea": false,
-                    "uniformDir": 0,
-                    "delay": 0,
-                    "repeat": false,
-                    "duration": 0,
-                    "proxy": "chargedHeatHoming",
-                    "offset": {
-                      "x": 0,
-                      "y": 0,
-                      "z": 12
-                    },
-                    "count": 1,
-                    "type": "SHOOT_PROXY_RANGE"
+                    "withElse": true,
+                    "type": "IF",
+                    "condition": "tmp.xpcMultiplayerAdjustment",
+                    "thenStep": [
+                      {
+                        "align": "BOTTOM",
+                        "centralAngle": 0,
+                        "angleVary": 0,
+                        "startDist": 20,
+                        "startDistCollide": "CLOSER",
+                        "random": false,
+                        "clockwise": false,
+                        "flipLeftFace": 0,
+                        "circularArea": false,
+                        "uniformDir": 0,
+                        "delay": 0,
+                        "repeat": false,
+                        "duration": 0,
+                        "proxy": "chargedHeatHomingMultibakery",
+                        "offset": {
+                          "x": 0,
+                          "y": 0,
+                          "z": 12
+                        },
+                        "count": 1,
+                        "type": "SHOOT_PROXY_RANGE"
+                      }
+                    ],
+                    "elseStep": [
+                      {
+                        "align": "BOTTOM",
+                        "centralAngle": 0,
+                        "angleVary": 0,
+                        "startDist": 20,
+                        "startDistCollide": "CLOSER",
+                        "random": false,
+                        "clockwise": false,
+                        "flipLeftFace": 0,
+                        "circularArea": false,
+                        "uniformDir": 0,
+                        "delay": 0,
+                        "repeat": false,
+                        "duration": 0,
+                        "proxy": "chargedHeatHoming",
+                        "offset": {
+                          "x": 0,
+                          "y": 0,
+                          "z": 12
+                        },
+                        "count": 1,
+                        "type": "SHOOT_PROXY_RANGE"
+                      }
+                    ]
                   }
                 ]
               },
@@ -16276,27 +16340,59 @@
                 ],
                 "thenStep": [
                   {
-                    "align": "BOTTOM",
-                    "centralAngle": 0,
-                    "angleVary": 0,
-                    "startDist": 20,
-                    "startDistCollide": "CLOSER",
-                    "random": false,
-                    "clockwise": false,
-                    "flipLeftFace": 0,
-                    "circularArea": false,
-                    "uniformDir": 0,
-                    "delay": 0,
-                    "repeat": false,
-                    "duration": 0,
-                    "proxy": "chargedColdHoming",
-                    "offset": {
-                      "x": 0,
-                      "y": 0,
-                      "z": 12
-                    },
-                    "count": 1,
-                    "type": "SHOOT_PROXY_RANGE"
+                    "withElse": true,
+                    "type": "IF",
+                    "condition": "tmp.xpcMultiplayerAdjustment",
+                    "thenStep": [
+                      {
+                        "align": "BOTTOM",
+                        "centralAngle": 0,
+                        "angleVary": 0,
+                        "startDist": 20,
+                        "startDistCollide": "CLOSER",
+                        "random": false,
+                        "clockwise": false,
+                        "flipLeftFace": 0,
+                        "circularArea": false,
+                        "uniformDir": 0,
+                        "delay": 0,
+                        "repeat": false,
+                        "duration": 0,
+                        "proxy": "chargedColdHomingMultibakery",
+                        "offset": {
+                          "x": 0,
+                          "y": 0,
+                          "z": 12
+                        },
+                        "count": 1,
+                        "type": "SHOOT_PROXY_RANGE"
+                      }
+                    ],
+                    "elseStep": [
+                      {
+                        "align": "BOTTOM",
+                        "centralAngle": 0,
+                        "angleVary": 0,
+                        "startDist": 20,
+                        "startDistCollide": "CLOSER",
+                        "random": false,
+                        "clockwise": false,
+                        "flipLeftFace": 0,
+                        "circularArea": false,
+                        "uniformDir": 0,
+                        "delay": 0,
+                        "repeat": false,
+                        "duration": 0,
+                        "proxy": "chargedColdHoming",
+                        "offset": {
+                          "x": 0,
+                          "y": 0,
+                          "z": 12
+                        },
+                        "count": 1,
+                        "type": "SHOOT_PROXY_RANGE"
+                      }
+                    ]
                   }
                 ]
               },
@@ -16312,27 +16408,59 @@
                 ],
                 "thenStep": [
                   {
-                    "align": "BOTTOM",
-                    "centralAngle": 0,
-                    "angleVary": 0,
-                    "startDist": 20,
-                    "startDistCollide": "CLOSER",
-                    "random": false,
-                    "clockwise": false,
-                    "flipLeftFace": 0,
-                    "circularArea": false,
-                    "uniformDir": 0,
-                    "delay": 0,
-                    "repeat": false,
-                    "duration": 0,
-                    "proxy": "chargedShockHoming",
-                    "offset": {
-                      "x": 0,
-                      "y": 0,
-                      "z": 12
-                    },
-                    "count": 1,
-                    "type": "SHOOT_PROXY_RANGE"
+                    "withElse": true,
+                    "type": "IF",
+                    "condition": "tmp.xpcMultiplayerAdjustment",
+                    "thenStep": [
+                      {
+                        "align": "BOTTOM",
+                        "centralAngle": 0,
+                        "angleVary": 0,
+                        "startDist": 20,
+                        "startDistCollide": "CLOSER",
+                        "random": false,
+                        "clockwise": false,
+                        "flipLeftFace": 0,
+                        "circularArea": false,
+                        "uniformDir": 0,
+                        "delay": 0,
+                        "repeat": false,
+                        "duration": 0,
+                        "proxy": "chargedShockHomingMultibakery",
+                        "offset": {
+                          "x": 0,
+                          "y": 0,
+                          "z": 12
+                        },
+                        "count": 1,
+                        "type": "SHOOT_PROXY_RANGE"
+                      }
+                    ],
+                    "elseStep": [
+                      {
+                        "align": "BOTTOM",
+                        "centralAngle": 0,
+                        "angleVary": 0,
+                        "startDist": 20,
+                        "startDistCollide": "CLOSER",
+                        "random": false,
+                        "clockwise": false,
+                        "flipLeftFace": 0,
+                        "circularArea": false,
+                        "uniformDir": 0,
+                        "delay": 0,
+                        "repeat": false,
+                        "duration": 0,
+                        "proxy": "chargedShockHoming",
+                        "offset": {
+                          "x": 0,
+                          "y": 0,
+                          "z": 12
+                        },
+                        "count": 1,
+                        "type": "SHOOT_PROXY_RANGE"
+                      }
+                    ]
                   }
                 ]
               },
@@ -16348,27 +16476,59 @@
                 ],
                 "thenStep": [
                   {
-                    "align": "BOTTOM",
-                    "centralAngle": 0,
-                    "angleVary": 0,
-                    "startDist": 20,
-                    "startDistCollide": "CLOSER",
-                    "random": false,
-                    "clockwise": false,
-                    "flipLeftFace": 0,
-                    "circularArea": false,
-                    "uniformDir": 0,
-                    "delay": 0,
-                    "repeat": false,
-                    "duration": 0,
-                    "proxy": "chargedWaveHoming",
-                    "offset": {
-                      "x": 0,
-                      "y": 0,
-                      "z": 12
-                    },
-                    "count": 1,
-                    "type": "SHOOT_PROXY_RANGE"
+                    "withElse": true,
+                    "type": "IF",
+                    "condition": "tmp.xpcMultiplayerAdjustment",
+                    "thenStep": [
+                      {
+                        "align": "BOTTOM",
+                        "centralAngle": 0,
+                        "angleVary": 0,
+                        "startDist": 20,
+                        "startDistCollide": "CLOSER",
+                        "random": false,
+                        "clockwise": false,
+                        "flipLeftFace": 0,
+                        "circularArea": false,
+                        "uniformDir": 0,
+                        "delay": 0,
+                        "repeat": false,
+                        "duration": 0,
+                        "proxy": "chargedWaveHomingMultibakery",
+                        "offset": {
+                          "x": 0,
+                          "y": 0,
+                          "z": 12
+                        },
+                        "count": 1,
+                        "type": "SHOOT_PROXY_RANGE"
+                      }
+                    ],
+                    "elseStep": [
+                      {
+                        "align": "BOTTOM",
+                        "centralAngle": 0,
+                        "angleVary": 0,
+                        "startDist": 20,
+                        "startDistCollide": "CLOSER",
+                        "random": false,
+                        "clockwise": false,
+                        "flipLeftFace": 0,
+                        "circularArea": false,
+                        "uniformDir": 0,
+                        "delay": 0,
+                        "repeat": false,
+                        "duration": 0,
+                        "proxy": "chargedWaveHoming",
+                        "offset": {
+                          "x": 0,
+                          "y": 0,
+                          "z": 12
+                        },
+                        "count": 1,
+                        "type": "SHOOT_PROXY_RANGE"
+                      }
+                    ]
                   }
                 ]
               }
@@ -16557,7 +16717,7 @@
               {
                 "withElse": false,
                 "type": "IF",
-                "condition": "!combat.facingPuzzle && !tmp.xpcDisableHoming",
+                "condition": "!combat.facingPuzzle",
                 "thenStep": [
                   {
                     "searchType": "IN_VIEW",
@@ -16579,27 +16739,59 @@
                 ],
                 "thenStep": [
                   {
-                    "align": "BOTTOM",
-                    "centralAngle": 0,
-                    "angleVary": 0,
-                    "startDist": 20,
-                    "startDistCollide": "CLOSER",
-                    "random": false,
-                    "clockwise": false,
-                    "flipLeftFace": 0,
-                    "circularArea": false,
-                    "uniformDir": 0,
-                    "delay": 0,
-                    "repeat": false,
-                    "duration": 0,
-                    "proxy": "chargedNeutralHoming",
-                    "offset": {
-                      "x": 0,
-                      "y": 0,
-                      "z": 12
-                    },
-                    "count": 1,
-                    "type": "SHOOT_PROXY_RANGE"
+                    "withElse": true,
+                    "type": "IF",
+                    "condition": "tmp.xpcMultiplayerAdjustment",
+                    "thenStep": [
+                      {
+                        "align": "BOTTOM",
+                        "centralAngle": 0,
+                        "angleVary": 0,
+                        "startDist": 20,
+                        "startDistCollide": "CLOSER",
+                        "random": false,
+                        "clockwise": false,
+                        "flipLeftFace": 0,
+                        "circularArea": false,
+                        "uniformDir": 0,
+                        "delay": 0,
+                        "repeat": false,
+                        "duration": 0,
+                        "proxy": "chargedNeutralHomingMultibakery",
+                        "offset": {
+                          "x": 0,
+                          "y": 0,
+                          "z": 12
+                        },
+                        "count": 1,
+                        "type": "SHOOT_PROXY_RANGE"
+                      }
+                    ],
+                    "elseStep": [
+                      {
+                        "align": "BOTTOM",
+                        "centralAngle": 0,
+                        "angleVary": 0,
+                        "startDist": 20,
+                        "startDistCollide": "CLOSER",
+                        "random": false,
+                        "clockwise": false,
+                        "flipLeftFace": 0,
+                        "circularArea": false,
+                        "uniformDir": 0,
+                        "delay": 0,
+                        "repeat": false,
+                        "duration": 0,
+                        "proxy": "chargedNeutralHoming",
+                        "offset": {
+                          "x": 0,
+                          "y": 0,
+                          "z": 12
+                        },
+                        "count": 1,
+                        "type": "SHOOT_PROXY_RANGE"
+                      }
+                    ]
                   }
                 ]
               },
@@ -16615,27 +16807,59 @@
                 ],
                 "thenStep": [
                   {
-                    "align": "BOTTOM",
-                    "centralAngle": 0,
-                    "angleVary": 0,
-                    "startDist": 20,
-                    "startDistCollide": "CLOSER",
-                    "random": false,
-                    "clockwise": false,
-                    "flipLeftFace": 0,
-                    "circularArea": false,
-                    "uniformDir": 0,
-                    "delay": 0,
-                    "repeat": false,
-                    "duration": 0,
-                    "proxy": "chargedHeatHoming",
-                    "offset": {
-                      "x": 0,
-                      "y": 0,
-                      "z": 12
-                    },
-                    "count": 1,
-                    "type": "SHOOT_PROXY_RANGE"
+                    "withElse": true,
+                    "type": "IF",
+                    "condition": "tmp.xpcMultiplayerAdjustment",
+                    "thenStep": [
+                      {
+                        "align": "BOTTOM",
+                        "centralAngle": 0,
+                        "angleVary": 0,
+                        "startDist": 20,
+                        "startDistCollide": "CLOSER",
+                        "random": false,
+                        "clockwise": false,
+                        "flipLeftFace": 0,
+                        "circularArea": false,
+                        "uniformDir": 0,
+                        "delay": 0,
+                        "repeat": false,
+                        "duration": 0,
+                        "proxy": "chargedHeatHomingMultibakery",
+                        "offset": {
+                          "x": 0,
+                          "y": 0,
+                          "z": 12
+                        },
+                        "count": 1,
+                        "type": "SHOOT_PROXY_RANGE"
+                      }
+                    ],
+                    "elseStep": [
+                      {
+                        "align": "BOTTOM",
+                        "centralAngle": 0,
+                        "angleVary": 0,
+                        "startDist": 20,
+                        "startDistCollide": "CLOSER",
+                        "random": false,
+                        "clockwise": false,
+                        "flipLeftFace": 0,
+                        "circularArea": false,
+                        "uniformDir": 0,
+                        "delay": 0,
+                        "repeat": false,
+                        "duration": 0,
+                        "proxy": "chargedHeatHoming",
+                        "offset": {
+                          "x": 0,
+                          "y": 0,
+                          "z": 12
+                        },
+                        "count": 1,
+                        "type": "SHOOT_PROXY_RANGE"
+                      }
+                    ]
                   }
                 ]
               },
@@ -16651,27 +16875,59 @@
                 ],
                 "thenStep": [
                   {
-                    "align": "BOTTOM",
-                    "centralAngle": 0,
-                    "angleVary": 0,
-                    "startDist": 20,
-                    "startDistCollide": "CLOSER",
-                    "random": false,
-                    "clockwise": false,
-                    "flipLeftFace": 0,
-                    "circularArea": false,
-                    "uniformDir": 0,
-                    "delay": 0,
-                    "repeat": false,
-                    "duration": 0,
-                    "proxy": "chargedColdHoming",
-                    "offset": {
-                      "x": 0,
-                      "y": 0,
-                      "z": 12
-                    },
-                    "count": 1,
-                    "type": "SHOOT_PROXY_RANGE"
+                    "withElse": true,
+                    "type": "IF",
+                    "condition": "tmp.xpcMultiplayerAdjustment",
+                    "thenStep": [
+                      {
+                        "align": "BOTTOM",
+                        "centralAngle": 0,
+                        "angleVary": 0,
+                        "startDist": 20,
+                        "startDistCollide": "CLOSER",
+                        "random": false,
+                        "clockwise": false,
+                        "flipLeftFace": 0,
+                        "circularArea": false,
+                        "uniformDir": 0,
+                        "delay": 0,
+                        "repeat": false,
+                        "duration": 0,
+                        "proxy": "chargedColdHomingMultibakery",
+                        "offset": {
+                          "x": 0,
+                          "y": 0,
+                          "z": 12
+                        },
+                        "count": 1,
+                        "type": "SHOOT_PROXY_RANGE"
+                      }
+                    ],
+                    "elseStep": [
+                      {
+                        "align": "BOTTOM",
+                        "centralAngle": 0,
+                        "angleVary": 0,
+                        "startDist": 20,
+                        "startDistCollide": "CLOSER",
+                        "random": false,
+                        "clockwise": false,
+                        "flipLeftFace": 0,
+                        "circularArea": false,
+                        "uniformDir": 0,
+                        "delay": 0,
+                        "repeat": false,
+                        "duration": 0,
+                        "proxy": "chargedColdHoming",
+                        "offset": {
+                          "x": 0,
+                          "y": 0,
+                          "z": 12
+                        },
+                        "count": 1,
+                        "type": "SHOOT_PROXY_RANGE"
+                      }
+                    ]
                   }
                 ]
               },
@@ -16687,27 +16943,59 @@
                 ],
                 "thenStep": [
                   {
-                    "align": "BOTTOM",
-                    "centralAngle": 0,
-                    "angleVary": 0,
-                    "startDist": 20,
-                    "startDistCollide": "CLOSER",
-                    "random": false,
-                    "clockwise": false,
-                    "flipLeftFace": 0,
-                    "circularArea": false,
-                    "uniformDir": 0,
-                    "delay": 0,
-                    "repeat": false,
-                    "duration": 0,
-                    "proxy": "chargedShockHoming",
-                    "offset": {
-                      "x": 0,
-                      "y": 0,
-                      "z": 12
-                    },
-                    "count": 1,
-                    "type": "SHOOT_PROXY_RANGE"
+                    "withElse": true,
+                    "type": "IF",
+                    "condition": "tmp.xpcMultiplayerAdjustment",
+                    "thenStep": [
+                      {
+                        "align": "BOTTOM",
+                        "centralAngle": 0,
+                        "angleVary": 0,
+                        "startDist": 20,
+                        "startDistCollide": "CLOSER",
+                        "random": false,
+                        "clockwise": false,
+                        "flipLeftFace": 0,
+                        "circularArea": false,
+                        "uniformDir": 0,
+                        "delay": 0,
+                        "repeat": false,
+                        "duration": 0,
+                        "proxy": "chargedShockHomingMultibakery",
+                        "offset": {
+                          "x": 0,
+                          "y": 0,
+                          "z": 12
+                        },
+                        "count": 1,
+                        "type": "SHOOT_PROXY_RANGE"
+                      }
+                    ],
+                    "elseStep": [
+                      {
+                        "align": "BOTTOM",
+                        "centralAngle": 0,
+                        "angleVary": 0,
+                        "startDist": 20,
+                        "startDistCollide": "CLOSER",
+                        "random": false,
+                        "clockwise": false,
+                        "flipLeftFace": 0,
+                        "circularArea": false,
+                        "uniformDir": 0,
+                        "delay": 0,
+                        "repeat": false,
+                        "duration": 0,
+                        "proxy": "chargedShockHoming",
+                        "offset": {
+                          "x": 0,
+                          "y": 0,
+                          "z": 12
+                        },
+                        "count": 1,
+                        "type": "SHOOT_PROXY_RANGE"
+                      }
+                    ]
                   }
                 ]
               },
@@ -16723,27 +17011,59 @@
                 ],
                 "thenStep": [
                   {
-                    "align": "BOTTOM",
-                    "centralAngle": 0,
-                    "angleVary": 0,
-                    "startDist": 20,
-                    "startDistCollide": "CLOSER",
-                    "random": false,
-                    "clockwise": false,
-                    "flipLeftFace": 0,
-                    "circularArea": false,
-                    "uniformDir": 0,
-                    "delay": 0,
-                    "repeat": false,
-                    "duration": 0,
-                    "proxy": "chargedWaveHoming",
-                    "offset": {
-                      "x": 0,
-                      "y": 0,
-                      "z": 12
-                    },
-                    "count": 1,
-                    "type": "SHOOT_PROXY_RANGE"
+                    "withElse": true,
+                    "type": "IF",
+                    "condition": "tmp.xpcMultiplayerAdjustment",
+                    "thenStep": [
+                      {
+                        "align": "BOTTOM",
+                        "centralAngle": 0,
+                        "angleVary": 0,
+                        "startDist": 20,
+                        "startDistCollide": "CLOSER",
+                        "random": false,
+                        "clockwise": false,
+                        "flipLeftFace": 0,
+                        "circularArea": false,
+                        "uniformDir": 0,
+                        "delay": 0,
+                        "repeat": false,
+                        "duration": 0,
+                        "proxy": "chargedWaveHomingMultibakery",
+                        "offset": {
+                          "x": 0,
+                          "y": 0,
+                          "z": 12
+                        },
+                        "count": 1,
+                        "type": "SHOOT_PROXY_RANGE"
+                      }
+                    ],
+                    "elseStep": [
+                      {
+                        "align": "BOTTOM",
+                        "centralAngle": 0,
+                        "angleVary": 0,
+                        "startDist": 20,
+                        "startDistCollide": "CLOSER",
+                        "random": false,
+                        "clockwise": false,
+                        "flipLeftFace": 0,
+                        "circularArea": false,
+                        "uniformDir": 0,
+                        "delay": 0,
+                        "repeat": false,
+                        "duration": 0,
+                        "proxy": "chargedWaveHoming",
+                        "offset": {
+                          "x": 0,
+                          "y": 0,
+                          "z": 12
+                        },
+                        "count": 1,
+                        "type": "SHOOT_PROXY_RANGE"
+                      }
+                    ]
                   }
                 ]
               }

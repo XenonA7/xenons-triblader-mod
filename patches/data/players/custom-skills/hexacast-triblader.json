@@ -5238,7 +5238,7 @@
         }
       ],
       "invisible": false,
-      "hp": 25.0,
+      "hp": 12.0,
       "killEffect": {
         "sheet": "specials.icicles",
         "name": "icicleExplodeBig"

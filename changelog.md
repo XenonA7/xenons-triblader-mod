@@ -1,3 +1,24 @@
+## 3.5.4 (08/15/2026)
+### New Content
+- Added "Extra Settings" options to art-testing and green-screen-room
+- Added a switch in art-testing to toggle tmp.xpcMultiplayerAdjustment
+### Changes
+- Renamed tmp.xpcDisableHoming to tmp.xpcMultiplayerAdjustment
+- Disabled saveMode for all maps accessible via the unused-content room
+- Disabled saveMode for legacy dev room
+- Calamity Beacon now always shoots proxy calamityFlare away from the player to avoid crossing the jump path
+- Reduced duration of Branding Blaze jump before final attack (increased gravity)
+- Added a screen shake when Rude Buster is launched
+- Added screen flash effect for the final hit of Triforce Slash
+### Fixes
+- Fixed post-duel crash in xpc/bonus/guild-war
+- Fixed Stasis Storm to use dashRevFast instead of dashFast during huge whirl segment
+### Balance
+- Tower of Tranquility ice platforms reduced HP factor from 25 to 12
+- Triblader pvp enemies now have HEAVY hit stability during the first part of Flaming Flurry (player still has MEDIUM)
+- During multiplayer pvp, Zir'vitar Strike's targeting phase moves faster, cannot be stopped, and has reduced turn speed
+- Hexacast THROW_NORMAL and THROW_CHARGED no longer disable homing during multiplayer pvp, they have reduced proxy turn speed now
+
 ## 3.5.3 (07/13/2026)
 ### Fixes
 - Added TouchTrigger zones to hideout-north to trigger sandbag failsafe when the player enters from the south
