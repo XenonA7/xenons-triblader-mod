@@ -1,4 +1,4 @@
-## 3.5.5 (##/##/2026)
+## 3.5.5 (09/13/2026)
 ### General
 - Now requires menu-ui-replacer 1.1.0 or higher
 ### New Content
