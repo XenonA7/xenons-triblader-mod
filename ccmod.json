@@ -1,6 +1,6 @@
 {
 	"id": "xenons-playable-classes",
-	"version": "3.5.4",
+	"version": "3.5.5",
 	"title": {
 		"en_US": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
 		"de_DE": "Xenon's Playable Classes \\i[class-tri] \\i[class-hexa]",
@@ -31,7 +31,7 @@
 		"Simplify": ">=2.12.1",
 		"extendable-severed-heads": ">=1.1.0",
 		"cc-alybox": ">=1.1.0",
-		"menu-ui-replacer": ">=1.0.5",
+		"menu-ui-replacer": ">=1.1.0",
 		"extension-asset-preloader": ">=1.0.0",
 		"crosscode": ">=1.4.0",
 		"post-game": ">=1.4.0"

@@ -1,3 +1,16 @@
+## 3.5.5 (##/##/2026)
+### General
+- Now requires menu-ui-replacer 1.1.0 or higher
+### New Content
+- Added new Triblader-Lea menu portrait by Orco Pixelado
+- Implemented Hexacast AreaButton and MapFloorButtonContainer icons
+- Added TinyHead sprites for all non-Lea XPC characters (for Multibakery)
+### Changes
+- Updated Hexacast AreaButton sprites
+- Updated mod credits and README to include Orco new artwork
+### Fixes
+- Fixed Hexacast-Lea sprite color issue in levelUpJump
+
 ## 3.5.4 (08/15/2026)
 ### New Content
 - Added "Extra Settings" options to art-testing and green-screen-room

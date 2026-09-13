@@ -42,6 +42,12 @@
         "offY": 368,
         "sizeX": 34,
         "sizeY": 20
+      },
+      "TinyHead": {
+        "offX": 224,
+        "offY": 352,
+        "sizeX": 12,
+        "sizeY": 10
       }
     }
   },
@@ -88,6 +94,12 @@
         "offY": 368,
         "sizeX": 34,
         "sizeY": 20
+      },
+      "TinyHead": {
+        "offX": 224,
+        "offY": 352,
+        "sizeX": 12,
+        "sizeY": 10
       }
     }
   },
@@ -134,6 +146,12 @@
         "offY": 368,
         "sizeX": 34,
         "sizeY": 20
+      },
+      "TinyHead": {
+        "offX": 224,
+        "offY": 352,
+        "sizeX": 12,
+        "sizeY": 10
       }
     }
   },
@@ -180,7 +198,157 @@
         "offY": 368,
         "sizeX": 34,
         "sizeY": 20
+      },
+      "TinyHead": {
+        "offX": 224,
+        "offY": 352,
+        "sizeX": 12,
+        "sizeY": 10
       }
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": {
+      "DOCTYPE": "MENU_GUI_CONFIG",
+      "name": "Hexacast1",
+      "gfx": "media/gui/menu-hexacasts.png",
+      "AreaButton": {
+        "gfxOffX": 0,
+        "gfxOffY": 0,
+        "offX": 0,
+        "offY": 0,
+        "sizeX": 14,
+        "sizeY": 12
+      },
+      "MapFloorButtonContainer": {
+        "offX": 0,
+        "offY": 16,
+        "sizeX": 34,
+        "sizeY": 20
+      },
+      "TinyHead": {
+        "offX": 16,
+        "offY": 0,
+        "sizeX": 12,
+        "sizeY": 11
+      }
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": {
+      "DOCTYPE": "MENU_GUI_CONFIG",
+      "name": "Hexacast2",
+      "gfx": "media/gui/menu-hexacasts.png",
+      "AreaButton": {
+        "gfxOffX": 0,
+        "gfxOffY": 0,
+        "offX": 48,
+        "offY": 0,
+        "sizeX": 14,
+        "sizeY": 12
+      },
+      "MapFloorButtonContainer": {
+        "offX": 48,
+        "offY": 16,
+        "sizeX": 34,
+        "sizeY": 20
+      },
+      "TinyHead": {
+        "offX": 64,
+        "offY": 0,
+        "sizeX": 12,
+        "sizeY": 11
+      }
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": {
+      "DOCTYPE": "MENU_GUI_CONFIG",
+      "name": "Hexacast3",
+      "gfx": "media/gui/menu-hexacasts.png",
+      "AreaButton": {
+        "gfxOffX": 0,
+        "gfxOffY": 0,
+        "offX": 96,
+        "offY": 0,
+        "sizeX": 14,
+        "sizeY": 12
+      },
+      "MapFloorButtonContainer": {
+        "offX": 96,
+        "offY": 16,
+        "sizeX": 34,
+        "sizeY": 20
+      },
+      "TinyHead": {
+        "offX": 112,
+        "offY": 0,
+        "sizeX": 12,
+        "sizeY": 11
+      }
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": {
+      "DOCTYPE": "MENU_GUI_CONFIG",
+      "name": "Schneider",
+      "gfx": "media/gui/menu-schneiders.png",
+      "TinyHead": {
+        "offX": 0,
+        "offY": 0,
+        "sizeX": 10,
+        "sizeY": 12
+      }
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": {
+      "DOCTYPE": "MENU_GUI_CONFIG",
+      "name": "Luke",
+      "gfx": "media/gui/menu-schneiders.png",
+      "TinyHead": {
+        "offX": 16,
+        "offY": 0,
+        "sizeX": 10,
+        "sizeY": 12
+      }
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": {
+      "DOCTYPE": "MENU_GUI_CONFIG",
+      "name": "triblader-lea",
+      "gfx": "media/gui/menu-triblader-lea.png",
+      "Large": {
+        "gfxOffX": -14,
+        "gfxOffY": -6,
+        "offX": 0,
+        "offY": 0,
+        "sizeX": 130,
+        "sizeY": 384
+      },
+      "Small": {
+        "gfxOffX": -15,
+        "gfxOffY": -7,
+        "offX": 144,
+        "offY": 0,
+        "sizeX": 100,
+        "sizeY": 384
+      },
+      "Head": {
+        "gfxOffX": 0,
+        "gfxOffY": 0,
+        "offX": 144,
+        "offY": 288,
+        "sizeX": 126,
+        "sizeY": 35
+      },
     }
   }
 ]
